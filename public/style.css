@@ -309,7 +309,13 @@ height: 60px;
     right: 15%;
   }
 
-
+.footer-mobile{
+    display: none;
+}
+.footer-mobile .footer-logo img{
+    width: 80px;
+    padding: 20px;
+}
 .footer {
     margin-top: 80px;
     display: grid;
