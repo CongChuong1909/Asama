@@ -21,8 +21,8 @@
     justify-content: start;
 }
 .logo-img{
-    width: 164px;
-    height: 121px;
+    width: 120px;
+    /* height: 121px; */
 }
 .menu{
     display: flex;
@@ -30,8 +30,8 @@
     width: 75%;
     
     text-transform: uppercase;
-    font-size: 28px;
-    gap: 60px;
+    font-size: 20px;
+    gap: 20px;
     font-family: "Inter", serif;
 }
 .menu-item{
@@ -68,13 +68,13 @@
 .wrapbtn{
     position: absolute;
     left: 50%;
-    top: 66%;
+    top: 79%;
     width: 50%;
     z-index: 9;
     transform: translate(-20%, -50%);
 }
 .btn-buy{
-    background-color: #F30906;
+    background-color: #c00;
     color: #fff;
     display: inline-block;
     border-radius: 12px;
@@ -83,8 +83,7 @@
     transition: all 0.2s ease;
 }
 .btn-buy:hover{
-    opacity: 0.8;
-    
+    background-color: rgb(168, 0, 0);
 }
 .btn-buy a{
     color: #fff;
@@ -99,9 +98,6 @@
 }
 #product5 img{
     width: 100%;
-}
-#video{
-    height: 800px;
 }
 .wrap-video{
     padding: 60px;
@@ -130,6 +126,10 @@
     font-family: "Roboto Serif", serif;
     text-transform: uppercase;
     font-weight: 600;
+}
+#youtube-video{
+    width: 800px;
+    height: 450px;
 }
 .video-list{
     display: flex;
@@ -231,17 +231,26 @@ height: 60px;
   .contact-wrap{
     display: flex;
     justify-content: center;
+    margin-top: 60px;
     align-items: center;
   }
   .contact-img{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    margin-top: 80px;
+  }
+  .contact-img img{
+    width: 80%;
   }
   .contact-form{
     width: 50%;
     margin-top: 80px;
   }
   .form{
-    border: 2px solid #FF0000;
+    border: 2px solid #c00;
     border-radius: 16px;
     width: 70%;
     padding: 20px;
@@ -260,24 +269,24 @@ height: 60px;
     padding: 10px;
   }
   .form-item p{
-    font-size: 32px;
+    font-size: 22px;
     white-space: nowrap;
     font-weight: 500;
-    color: #FF0000;
+    color: #c00;
     font-family: "Inter", serif;
   }
   .form-item input{
     margin-left: 16px;
-    border: 2px solid #FF0000;
+    border: 2px solid #c00;
     outline: none;
     padding: 12px;
     width: 100%;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .callnow{
     margin-top: 16px;
-    background-color: #FF0000;
+    background-color: #c00;
     color: #fff;
     padding: 20px;
     width: 70%;
@@ -286,9 +295,13 @@ height: 60px;
     align-items: center;
     border-radius: 16px;
     cursor: pointer;
+    transition: all 0.2s ease;
   }
+  .callnow:hover{
+    background-color: rgb(168, 0, 0);
+}
   .callnow p{
-    font-size: 32px;
+    font-size: 24px;
     font-family: "Inter", serif;
   }
   .callnow img{
@@ -296,13 +309,18 @@ height: 60px;
     right: 15%;
   }
 
+
 .footer {
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 2fr 7fr 3fr; 
     gap: 20px; 
     background-color: #c00;
     color: white;
     padding: 40px;
+    border-top-left-radius:80px ;
+    border-top-right-radius: 80px ;
+    font-family: "Inter", serif;
   }
   
   .footer-logo {
@@ -316,10 +334,13 @@ height: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
+    text-align: center;
   }
   
   .footer-section h4 {
-    font-size: 18px;
+    font-size: 22px;
+    padding-bottom: 20px;
+    font-weight: 600;
     margin-bottom: 10px;
   }
   
@@ -330,10 +351,13 @@ height: 60px;
   
   .footer-section li {
     margin-bottom: 8px;
+    padding-bottom: 8px;
   }
   
   .footer-section a {
     color: white;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
   }
   
@@ -343,6 +367,10 @@ height: 60px;
     justify-content: center;
     align-items: center; 
     gap: 10px;
+    background-color: #fff;
+    height: 50px;
+    width: 90%;
+    border-radius: 16px;
   }
   
   .footer-form input {
@@ -352,6 +380,7 @@ height: 60px;
     border-radius: 5px;
     max-width: 300px;
     box-sizing: border-box;
+    outline: none;
   }
   
   .footer-form button {
@@ -359,8 +388,11 @@ height: 60px;
     background-color: white;
     color: #c00;
     border: none;
-    border-radius: 5px;
+    font-weight: 600;
+    background-color: #ccc;
+    border-radius: 16px;
     cursor: pointer;
+    margin-right: 10px;
   }
   .footer-thanks {
     grid-column: span 4;
@@ -368,12 +400,36 @@ height: 60px;
   }
   
   .footer-cards {
+    padding-top: 20px;
     grid-column: span 4; 
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
   }
-  
+  .footer-cards::before {
+    content: ""; 
+    position: absolute;
+    top: -10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 50%;
+    height: 2px;
+    background-color: #fff; 
+  }
+  .footer-cards h1{
+    font-size:24px;
+    font-weight: 700;
+  }
+  .payment{
+    position: absolute;
+    padding: 0 40px;
+    right: 0;
+  }
+  .payment img{
+    padding: 0 10px;
+  }
   .footer-cards img {
     height: 40px;
   }  
