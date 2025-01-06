@@ -38,6 +38,7 @@
     padding: 20px;
     height: 24px;
     color: #fff;
+    text-wrap: nowrap;
     cursor: pointer;
 }
 .menu-item:hover{
