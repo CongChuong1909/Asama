@@ -58,9 +58,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        line-height: 16px;   
     }
     .container{
-        padding: 18px 12px;
+        padding: 6px 12px;
     }
     .menu-item{
         padding:8px;
@@ -109,6 +110,9 @@
     .video-list{
         padding-top: 20px;
     }
+    .video-left video{
+        border-radius: 10px;
+    }
     .video-item h1{
         font-size: 7px;
         font-weight:600;
@@ -140,7 +144,7 @@
       height: 10px;
       }
       .video-left {
-        padding-top: 30px;
+        padding-top: 28px;
         display: flex;
         justify-content: center;
         align-items: center;
