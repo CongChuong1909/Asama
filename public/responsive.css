@@ -139,6 +139,9 @@
     .video-item{
         justify-content: start;
     }
+    .wrap-video{
+        flex-direction: row-reverse;
+    }
     .playvideo{
       width: 10px;
       height: 10px;
