@@ -39,11 +39,17 @@
     }
   }
   @media (max-width: 480px) {
+    .menuitem-destop{
+        display: none;
+    }
+    .menuitem-mobile{
+        display: block;
+    }
     .logo{
         display: none;
     }
     .header{
-        height: 120px;
+        height: 80px;
     }
     .menu{
         width: 100%;
