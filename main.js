@@ -26,18 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.getElementById("dataForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const data = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("phonenumber").value,
-      message: document.getElementById("address").value,
-    };
-    const url = "https://script.google.com/macros/s/AKfycbzGWsKCVaK3BVmcSiZy261srCWS8URjGJ5RypgksdlJ145QQmDJ3-9uqQG28DsJaSQn/exec";
-    await fetch(url, {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" },
-    });
-    alert("Data sent to Google Sheets!");
-  });
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyTxQkDzcWX2bItcwxvvlrbx9-oGqldMS-iuCp6rJ0AE6gYkIrWuktysYgTnX4__W8gpA/exec'
+
+    const form = document.forms['contact-form']
+
+    form.addEventListener('submit', e => {
+    
+    e.preventDefault()
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thank you! Form is submitted" ))
+    .then(() => { window.location.reload(); })
+    .catch(error => console.error('Error!', error.message))
+    })

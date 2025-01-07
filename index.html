@@ -118,25 +118,25 @@
                     <div class="contact-img">
                         <img src="./public/img/ss6.png" alt="">
                     </div>
-                    <form id="dataForm" class="contact-form">
+                    <form method="post" action="" name="contact-form" class="contact-form">
                         <div class="form-title">
                             <h1>TÔI MUỐN TƯ VẤN</h1>
                         </div>
                         <div class="form">
                             <div class="form-item">
                                 <p>Họ và tên: </p>
-                                <input type="text" id="name" required>
+                                <input type="text" id="name" name="FullName" required>
                             </div>
                             <div class="form-item">
                                 <p>Số điện thoại: </p>
-                                <input type="text" id="phonenumber" required>
+                                <input type="text" id="phonenumber" name="PhoneNumber" required>
                             </div>
                             <div class="form-item" >
                                 <p>Địa chỉ: </p>
-                                <input type="text" id="address" required>
+                                <input type="text" name="Address" id="address" required>
                             </div>
                         </div>
-                        <button type="submit" class="callnow">
+                        <button type="submit" value="Submit" class="callnow">
                             <p>Liên Hệ Ngay</p>
                             <img src="./public/img/callnow.png" alt="">
                         </button>
