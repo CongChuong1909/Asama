@@ -40,6 +40,10 @@
     color: #fff;
     text-wrap: nowrap;
     cursor: pointer;
+    
+}
+.menu-item:hover a{
+    color: #c00;
 }
 .menuitem-mobile{
     display: none;
@@ -50,6 +54,7 @@
 .menu-item a{
     color: #fff;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 .menu-item:hover{
     color: #ccc;
