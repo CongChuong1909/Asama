@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.forms['contact-form']
 
     form.addEventListener('submit', e => {
-    
-    e.preventDefault()
+        e.preventDefault()
+        alert("Cảm ơn!, Chúng tôi sẽ liên hệ bạn sớm nhất.");
     
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => alert("Thank you! Form is submitted" ))
