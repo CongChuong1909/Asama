@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyTxQkDzcWX2bItcwxvvlrbx9-oGqldMS-iuCp6rJ0AE6gYkIrWuktysYgTnX4__W8gpA/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyV6koIIi4EBt0GiiHpNDpmkOzuzhiJRIojFy-M79fvrs1XAVSHNGPrcPXynKadKMjc/exec'
 
     const form = document.forms['contact-form']
 
